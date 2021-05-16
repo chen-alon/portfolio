@@ -1,0 +1,17 @@
+.Download {
+  display: flex;
+  justify-content: center;
+}
+
+.Download button {
+  padding: 4px;
+  padding-right: 8px;
+  font-family: "Californian FB", Futura, sans-serif;
+  font-size: calc(5px + 2vmin);
+  color: #5e595f;
+  font-weight: bold;
+  border: 3px hidden #a7a2a9;
+  background-color: #c9abd8;
+}
+
+/* E5ECE9 */

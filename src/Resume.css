@@ -1,0 +1,52 @@
+.Resume {
+  font-family: "Californian FB", Futura, sans-serif;
+  font-size: calc(4px + 2vmin);
+  padding-top: 30px;
+}
+
+.cv {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 17px;
+}
+
+h2 {
+  background-color: #ebebeb;
+}
+
+.work-experience,
+.‎education‏ {
+  line-height: 140%;
+}
+
+.work-experience p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.time {
+  float: right;
+  font-size: 16px;
+}
+
+.work-experience dd {
+  padding-bottom: 12px;
+}
+
+.‎education‏ p {
+  font-size: 18px;
+}
+
+.list li {
+  padding-bottom: 8px;
+}
+
+.projects a {
+  color: #5e595f;
+  font-size: 19px;
+}
+
+.projects p {
+  padding-top: 14px;
+  line-height: 140%;
+}

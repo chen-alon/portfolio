@@ -1,0 +1,29 @@
+.Home {
+  text-align: center;
+  font-family: "Californian FB", Futura, sans-serif;
+  font-size: calc(10px + 2vmin);
+  color: #5e595f;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.App-logo {
+  height: 33vmin;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 6px double #a7a2a9;
+}
+
+.basic-details {
+  padding-top: 15px;
+}
+
+.basic-details a {
+  color: #5e595f;
+  text-decoration: none;
+}
+
+.basic-details text {
+  line-height: 170%;
+}
