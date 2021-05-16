@@ -1,8 +1,8 @@
 .App {
   font-family: "Californian FB", Futura, sans-serif;
   font-size: calc(10px + 2vmin);
-  /* color: #5e595f; */
-  color: black;
+  color: #5e595f;
+  /* color: black; */
   background-color: #cec2d6;
   margin-left: auto;
   margin-right: auto;
