@@ -1,13 +1,13 @@
 import React from "react";
-import "./Download.css";
+import "./Resume.css";
 import CV from "./CV_Chen_Alon.pdf";
 import IconButton from "@material-ui/core/IconButton";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 
 class DownloadFile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   downloadEmployeeData = () => {
     fetch(CV).then((response) => {
@@ -24,12 +24,14 @@ class DownloadFile extends React.Component {
   render() {
     return (
       <div className="Download">
-        <button onClick={this.downloadEmployeeData}>
-          <IconButton aria-label="download" size="small">
-            <ArrowDownwardIcon fontSize="inherit" />
-          </IconButton>
+        <IconButton
+          aria-label="download"
+          size="small"
+          onClick={this.downloadEmployeeData}
+        >
           Download Chen Alon's Resume
-        </button>
+          <ArrowDownwardIcon fontSize="inherit" />
+        </IconButton>
       </div>
     );
   }

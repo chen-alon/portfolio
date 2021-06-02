@@ -1,12 +1,24 @@
 .Resume {
   font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(4px + 2vmin);
-  padding-top: 30px;
+  font-size: calc(6px + 2vmin);
+  padding-top: 20px;
+  width: 100%;
+}
+
+.Download {
+  display: flex;
+  padding: 4px;
+  font-size: calc(8px + 2vmin);
+  font-weight: bold;
+  background-color: #c9abd8;
+  display: inline;
 }
 
 .cv {
+  text-align: left;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 20px;
   font-size: 17px;
 }
 
@@ -20,8 +32,8 @@ h2 {
 }
 
 .work-experience p {
-  text-align: left;
-  font-size: 18px;
+  /* text-align: left; */
+  /* font-size: 18px; */
 }
 
 .time {
@@ -29,16 +41,12 @@ h2 {
   font-size: 16px;
 }
 
-.work-experience dd {
-  padding-bottom: 12px;
-}
-
 .‎education‏ p {
   font-size: 18px;
 }
 
 .list li {
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
 }
 
 .projects a {
@@ -47,6 +55,5 @@ h2 {
 }
 
 .projects p {
-  padding-top: 14px;
   line-height: 140%;
 }

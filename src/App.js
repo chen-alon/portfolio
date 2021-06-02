@@ -1,37 +1,33 @@
 import "./App.css";
-import Resume from "./Resume";
+import Nav from "./Nav";
 import Home from "./Home";
+import Resume from "./Resume";
+import InputForm from "./InputForm";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
+    // <div className="container">
+    //   <InputForm />
+    // </div>
     <div className="App">
       <header className="App-header">
         <h1>I am Chen Alon</h1>
         <p>Software Engineer</p>
 
-        <nav className="site-nav">
-          <ul className="group">
-            <button onClick={console.log("home press")}>
-              <a href="/">Home</a>
-            </button>
-            <button onClick={console.log("About press")}>
-              <a href="/resume">Resume</a>
-            </button>
-            <button onClick={console.log("Portfolio press")}>
-              <a href="/portfolio">Portfolio</a>
-            </button>
-            <button onClick={console.log("Contact press")}>
-              <a href="/contact">Contact</a>
-            </button>
-          </ul>
-        </nav>
-        <Home></Home>
-
-        {/* <Resume></Resume> */}
+        <Router>
+          <Nav />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/portfolio" />
+            <Route path="/contact" />
+          </Switch>
+        </Router>
       </header>
 
       <footer>
-        <p>&copy; Chen Alon. since 1993</p>
+        <p>&copy; since 1993</p>
       </footer>
     </div>
   );

@@ -2,7 +2,6 @@
   font-family: "Californian FB", Futura, sans-serif;
   font-size: calc(10px + 2vmin);
   color: #5e595f;
-  /* color: black; */
   background-color: #cec2d6;
   margin-left: auto;
   margin-right: auto;
@@ -10,6 +9,8 @@
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center;
+  width: 100%;
 }
 
 .App-header {
@@ -18,55 +19,41 @@
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
 .App-header h1 {
   margin: 0;
   font-weight: bold;
-  font-size: calc(40px + 2vmin);
+  font-size: calc(30px + 2vmin);
 }
 
 .App-header p {
-  margin: 0;
-}
-
-.group button {
-  text-align: center;
-  width: "300px";
-  height: "30px";
+  margin-top: 0;
 }
 
 /* Site Navigation */
-.site-nav {
-  margin-top: 30px;
+nav ul {
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-.group {
-  margin: 0;
-  padding: 0;
-}
-
-.site-nav button {
-  border: none;
-  list-style: none;
-  float: left;
-  margin-right: 5px;
-  font-family: "Californian FB", Futura, sans-serif;
-  width: 100px;
-}
-
-.site-nav a {
-  display: block;
+nav li {
   color: #5e595f;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 3px solid #999;
+  text-transform: uppercase;
+  border: 1px dotted #999;
+  background: #f4f0f7;
+  border-radius: 10px;
+  width: 140px;
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+  border-spacing: 20px;
 }
 
-.site-nav a:hover {
+nav li:hover {
   background-color: #ebe7ef;
 }
 
@@ -78,17 +65,4 @@ footer {
   background-color: #f4f7f5;
   font-size: 13px;
   color: #999;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
