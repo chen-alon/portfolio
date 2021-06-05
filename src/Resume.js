@@ -51,57 +51,53 @@ class Resume extends React.Component {
               </IconButton>{" "}
               Projects‏‏
             </h2>
-            <div className="projects">
-              <p>
-                <a
-                  href="https://github.com/chen-alon/partners"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Hitchhiker
-                </a>{" "}
-                - Android application‏ ‏developed with React-Native for final
-                project ‎
-                <ul>
-                  <li>
-                    An application for finding travel partners in Israel and
-                    abroad. The application matches travelers based ‎on a count
-                    matching points algorithm ‎according to the traveler’s
-                    requirements.
-                  </li>
-                  <li>
-                    Using Firebase as the application server-side – users’
-                    authentication, database and storage.‎
-                  </li>
-                  <li>
-                    End to end development process – sketches, design and
-                    implementation.‎
-                  </li>
-                </ul>
-              </p>
-              <p>
-                <a
-                  href="https://github.com/chen-alon/SausanHouse"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Susan’s House
-                </a>{" "}
-                - IOS and Android application developed with React-Native for
-                real customer - Susan’s House organization ‎
-                <ul>
-                  <li>
-                    ‎An application for manage employees’ presence control
-                    enforced by location-based authentication ‎using Google Maps
-                    API.‎
-                  </li>
-                  <li>
-                    Project manager and communicator with the client –
-                    understand client requirement, roadmap ‎planning and tasks
-                    division between the group members.
-                  </li>
-                </ul>
-              </p>
+            <div className="projects-details">
+              <a
+                href="https://github.com/chen-alon/partners"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Hitchhiker
+              </a>{" "}
+              - Android application‏ ‏developed with React-Native for final
+              project ‎
+              <ul>
+                <li>
+                  An application for finding travel partners in Israel and
+                  abroad. The application matches travelers based ‎on a count
+                  matching points algorithm ‎according to the traveler’s
+                  requirements.
+                </li>
+                <li>
+                  Using Firebase as the application server-side – users’
+                  authentication, database and storage.‎
+                </li>
+                <li>
+                  End to end development process – sketches, design and
+                  implementation.‎
+                </li>
+              </ul>
+              <a
+                href="https://github.com/chen-alon/SausanHouse"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Susan’s House
+              </a>{" "}
+              - IOS and Android application developed with React-Native for real
+              customer - Susan’s House organization ‎
+              <ul>
+                <li>
+                  ‎An application for manage employees’ presence control
+                  enforced by location-based authentication ‎using Google Maps
+                  API.‎
+                </li>
+                <li>
+                  Project manager and communicator with the client – understand
+                  client requirement, roadmap ‎planning and tasks division
+                  between the group members.
+                </li>
+              </ul>
               <p>
                 <a
                   href="https://chen-alon-tic-tac-toe.herokuapp.com/"

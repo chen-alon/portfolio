@@ -22,8 +22,8 @@
   text-decoration: none;
 }
 
-a:hover {
-  color: red;
+.basic-details a:hover {
+  color: #000;
 }
 
 .basic-details text {
