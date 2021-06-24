@@ -1,15 +1,15 @@
-import "./App.css";
+import React from "react";
 import Nav from "./Nav";
 import Home from "./Home";
 import Resume from "./Resume";
-import InputForm from "./InputForm";
+import Portfolio from "../Portfolio/Portfolio";
+import Contact from "./Contact";
+// import InputForm from "./InputForm";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "../style/App.css";
 
 function App() {
   return (
-    // <div className="container">
-    //   <InputForm />
-    // </div>
     <div className="App">
       <header className="App-header">
         <h1>I am Chen Alon</h1>
@@ -20,8 +20,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/resume" component={Resume} />
-            <Route path="/portfolio" />
-            <Route path="/contact" />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </Router>
       </header>

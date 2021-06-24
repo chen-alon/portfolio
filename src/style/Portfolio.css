@@ -1,0 +1,27 @@
+.Portfolio {
+  font-family: "Californian FB", Futura, sans-serif;
+  font-size: calc(6px + 2vmin);
+  padding-top: 20px;
+  width: 100%;
+}
+
+.portfolio_image {
+  border: 0px;
+  background-color: transparent;
+  width: 8;
+}
+
+.card {
+  padding-top: 10px;
+  margin: 20px;
+  text-align: left;
+}
+
+.card a {
+  color: #5e595f;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: black;
+}

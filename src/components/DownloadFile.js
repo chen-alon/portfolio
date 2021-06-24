@@ -1,8 +1,8 @@
 import React from "react";
-import "./Resume.css";
-import CV from "./CV_Chen_Alon.pdf";
+import CV from "../files/CV_Chen_Alon.pdf";
 import IconButton from "@material-ui/core/IconButton";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import "../style/Resume.css";
 
 class DownloadFile extends React.Component {
   // constructor(props) {

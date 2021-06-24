@@ -1,16 +1,16 @@
 .Home {
   font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(5px + 2vmin);
+  font-size: calc(7px + 2vmin);
   color: #5e595f;
   padding-top: 20px;
   width: 100%;
 }
 
-.details {
+.basic-details {
   text-align: center;
   overflow: visible;
   border: 3px solid #afa2ac;
-  padding: 20px;
+  padding: 30px;
   margin-left: 50px;
   margin-right: 50px;
   position: sticky;
@@ -23,36 +23,41 @@
 }
 
 .basic-details a:hover {
-  color: #000;
+  color: #6f547e;
 }
 
 .basic-details text {
   line-height: 170%;
 }
 
-.image {
-  float: left;
-  pointer-events: none;
-  /* border-radius: 50%; */
-  /* border: 4px double #afa2ac; */
-  opacity: 95%;
-  border: 2px solid #afa2ac;
-  padding: 3px;
-  margin-right: 20px;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
-}
-
 .summary {
   padding-right: 50px;
+  width: 70%;
+  box-sizing: border-box;
+  float: right;
+  box-sizing: border-box;
 }
 
 .summary p {
   text-align: left;
   padding-top: 40px;
-  padding-left: 20px;
 }
 
-.summary p span {
-  display: block;
+.side-image {
+  float: left;
+  padding-top: 35px;
+  padding-left: 30px;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.image {
+  opacity: 95%;
+  border: 2px solid #afa2ac;
+  padding: 3px;
+  background-color: #dcddd99a;
+  box-sizing: border-box;
+  width: 200px;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
 }

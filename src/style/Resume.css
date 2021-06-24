@@ -6,7 +6,6 @@
 }
 
 .Download {
-  display: flex;
   padding: 4px;
   font-size: calc(8px + 2vmin);
   font-weight: bold;
@@ -18,13 +17,13 @@
   text-align: left;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: calc(6px + 2vmin);
 }
 
 h2 {
   background-color: #ebebeb;
-  margin-bottom: 15px;
   margin-top: 15px;
 }
 

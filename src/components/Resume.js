@@ -1,5 +1,4 @@
 import React from "react";
-import "./Resume.css";
 import DownloadFile from "./DownloadFile";
 import IconButton from "@material-ui/core/IconButton";
 import WorkIcon from "@material-ui/icons/Work";
@@ -8,6 +7,7 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import PersonIcon from "@material-ui/icons/Person";
 import LanguageIcon from "@material-ui/icons/Language";
 import StorageIcon from "@material-ui/icons/Storage";
+import "../style/Resume.css";
 
 class Resume extends React.Component {
   constructor(props) {
@@ -23,11 +23,7 @@ class Resume extends React.Component {
         <div className="cv">
           <div className="‎education‏">
             <h2>
-              <IconButton
-                aria-label="‎education‏"
-                size="small"
-                disabled={false}
-              >
+              <IconButton aria-label="‎education‏" size="small" disabled>
                 <SchoolIcon fontSize="inherit" />
               </IconButton>{" "}
               Education
@@ -42,11 +38,7 @@ class Resume extends React.Component {
 
           <div className="projects‏">
             <h2>
-              <IconButton
-                aria-label="‎education‏"
-                size="small"
-                disabled={false}
-              >
+              <IconButton aria-label="‎education‏" size="small" disabled>
                 <StorageIcon fontSize="inherit" />
               </IconButton>{" "}
               Projects‏‏
@@ -59,14 +51,14 @@ class Resume extends React.Component {
               >
                 Hitchhiker
               </a>{" "}
-              - Android application‏ ‏developed with React-Native for final
-              project ‎
+              - Android application‏ ‏developed with{" "}
+              <strong>React-Native</strong> for final project ‎
               <ul>
                 <li>
                   An application for finding travel partners in Israel and
-                  abroad. The application matches travelers based ‎on a count
-                  matching points algorithm ‎according to the traveler’s
-                  requirements.
+                  abroad. The application matches travelers based ‎on{" "}
+                  <strong>a count matching points algorithm</strong> ‎according
+                  to the traveler’s requirements.
                 </li>
                 <li>
                   Using Firebase as the application server-side – users’
@@ -84,13 +76,13 @@ class Resume extends React.Component {
               >
                 Susan’s House
               </a>{" "}
-              - IOS and Android application developed with React-Native for real
-              customer - Susan’s House organization ‎
+              - IOS and Android application developed with React-Native for{" "}
+              <strong>a real customer</strong> - Susan’s House organization ‎
               <ul>
                 <li>
                   ‎An application for manage employees’ presence control
-                  enforced by location-based authentication ‎using Google Maps
-                  API.‎
+                  enforced by <strong>location-based authentication</strong>{" "}
+                  ‎using Google Maps API.‎
                 </li>
                 <li>
                   Project manager and communicator with the client – understand
@@ -100,24 +92,31 @@ class Resume extends React.Component {
               </ul>
               <p>
                 <a
-                  href="https://chen-alon-tic-tac-toe.herokuapp.com/"
+                  href="https://github.com/chen-alon/tic-tac-toe"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Tic-Tac-Toe game
                 </a>{" "}
-                – Development of a Tic-Tac-Toe game with ReactJS
+                – Development of a Tic-Tac-Toe game with{" "}
+                <strong>ReactJS</strong>
+                <br />
+                The game can be played in a production environment on{" "}
+                <strong>Heroku platform</strong> –{" "}
+                <a
+                  href="https://chen-alon-tic-tac-toe.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  play the game.‎
+                </a>
               </p>
             </div>
           </div>
 
           <div className="professional-skills‏">
             <h2>
-              <IconButton
-                aria-label="‎education‏"
-                size="small"
-                disabled={false}
-              >
+              <IconButton aria-label="‎education‏" size="small" disabled>
                 <ThumbUpIcon fontSize="inherit" />
               </IconButton>{" "}
               Professional Skills‏
@@ -141,7 +140,7 @@ class Resume extends React.Component {
 
           <div className="work-experience">
             <h2>
-              <IconButton aria-label="work" size="small" disabled={false}>
+              <IconButton aria-label="work" size="small" disabled>
                 <WorkIcon fontSize="inherit" />
               </IconButton>{" "}
               ‎Work Experience‏
@@ -171,11 +170,7 @@ class Resume extends React.Component {
 
           <div className="military-service">
             <h2>
-              <IconButton
-                aria-label="‎education‏"
-                size="small"
-                disabled={false}
-              >
+              <IconButton aria-label="‎education‏" size="small" disabled>
                 <PersonIcon fontSize="inherit" />
               </IconButton>{" "}
               Military Service‏
@@ -188,11 +183,7 @@ class Resume extends React.Component {
 
           <div className="languages">
             <h2>
-              <IconButton
-                aria-label="‎education‏"
-                size="small"
-                disabled={false}
-              >
+              <IconButton aria-label="‎education‏" size="small" disabled>
                 <LanguageIcon fontSize="inherit" />
               </IconButton>{" "}
               ‎Languages
