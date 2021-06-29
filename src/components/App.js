@@ -1,10 +1,10 @@
 import React from "react";
+import Title from "./Title";
 import Nav from "./Nav";
 import Home from "./Home";
 import Resume from "./Resume";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "./Contact";
-// import InputForm from "./InputForm";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "../style/App.css";
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>I am Chen Alon</h1>
+        <Title text="I am Chen Alon"></Title>
         <p>Software Engineer</p>
 
         <Router>

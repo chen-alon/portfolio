@@ -19,7 +19,7 @@ function Nav() {
           <li>Portfolio</li>
         </Link>
         <Link
-          to="/contant"
+          to="/contact"
           style={{ padding: "10px", display: "inline-block" }}
         >
           <li>Contant</li>

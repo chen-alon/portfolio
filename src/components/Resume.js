@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import DownloadFile from "./DownloadFile";
 import IconButton from "@material-ui/core/IconButton";
 import WorkIcon from "@material-ui/icons/Work";
@@ -18,8 +19,9 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="Resume">
-        <DownloadFile />
-
+        <motion.button whileHover={{ scale: 1.2 }} className={"button"}>
+          <DownloadFile />
+        </motion.button>
         <div className="cv">
           <div className="‎education‏">
             <h2>
@@ -32,7 +34,6 @@ class Resume extends React.Component {
               Software Engineering B.Sc. degree‎, Azrieli College of Engineering
               (JCE)‎
               <span className="time">2016-2020‎</span>‎<br />
-              <strong>GPA: 86‎</strong>
             </p>
           </div>
 

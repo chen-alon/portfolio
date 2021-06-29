@@ -1,27 +1,48 @@
 .Portfolio {
   font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(6px + 2vmin);
+  font-size: calc(7px + 2vmin);
+  color: #5e595f;
   padding-top: 20px;
   width: 100%;
 }
 
-.portfolio_image {
-  border: 0px;
-  background-color: transparent;
-  width: 8;
-}
-
 .card {
-  padding-top: 10px;
-  margin: 20px;
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 90%;
   text-align: left;
+  margin: 0 auto;
 }
 
-.card a {
+.card:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+
+.card .details {
+  position: relative;
+  padding-top: 25px;
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
   color: #5e595f;
   text-decoration: none;
 }
 
-.card a:hover {
-  color: black;
+.links a:hover {
+  color: #ac8cbd;
 }

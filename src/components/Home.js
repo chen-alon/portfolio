@@ -53,24 +53,24 @@ class Home extends React.Component {
               LinkedIn
             </a>
             <br />
-            <strong>
+            {/* <strong>
               Looking for a full-time job as a Front-End‏ ‏developer in Gush Dan
-            </strong>
+            </strong> */}
           </div>
 
           <div className="summary">
             <p>
               HEY there!
               <br />
-              My name is Chen Alon, I'm 27 years old and a software engineering
+              My name is Chen Alon, I'm 27 years old and a Software Engineering
               graduate.
               <br />
-              I’m looking for my first challenge, ‎with a fast and self-learning
-              ability, very committed and have great social skills. ‎
               <br />
+              Looking forward to earning the position of Software Engineer at a
+              leading organization to showcase my skills in programming to
+              generate high-end solutions to general software issues along with
+              drawing better user experience.
               <br />
-              I created this website so you can be impressed and see my
-              abilities.
               <br />
               Injoy.
             </p>

@@ -13,6 +13,12 @@
   display: inline;
 }
 
+.button {
+  border: 0px;
+  border-width: 0px;
+  background-color: transparent;
+}
+
 .cv {
   text-align: left;
   padding-left: 40px;
@@ -40,6 +46,7 @@ h2 {
 .projects-details a {
   color: #ac8cbd;
   font-size: 19px;
+  text-decoration: none;
 }
 
 .projects-details a:hover {
