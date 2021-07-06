@@ -5,7 +5,7 @@ import { TextField, Grid } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import "../style/Contact.css";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   input: {
     color: "rgb(94, 89, 95)",
     fontFamily: "Californian FB",
