@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import Title from "./Title";
 import DownloadFile from "./DownloadFile";
 import IconButton from "@material-ui/core/IconButton";
 import WorkIcon from "@material-ui/icons/Work";
@@ -8,6 +8,7 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import PersonIcon from "@material-ui/icons/Person";
 import LanguageIcon from "@material-ui/icons/Language";
 import StorageIcon from "@material-ui/icons/Storage";
+import { motion } from "framer-motion";
 import "../style/Resume.css";
 
 class Resume extends React.Component {
@@ -19,10 +20,15 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="Resume">
-        <motion.button whileHover={{ scale: 1.2 }} className={"button"}>
-          <DownloadFile />
-        </motion.button>
+        <div className="resume-title">
+          <Title text="Resume"></Title>
+        </div>
         <div className="cv">
+          <div style={{ textAlign: "right" }}>
+            <motion.button whileHover={{ scale: 1.1 }} className={"button"}>
+              <DownloadFile />
+            </motion.button>
+          </div>
           <div className="‎education‏">
             <h2>
               <IconButton aria-label="‎education‏" size="small" disabled>
@@ -36,7 +42,6 @@ class Resume extends React.Component {
               <span className="time">2016-2020‎</span>‎<br />
             </p>
           </div>
-
           <div className="projects‏">
             <h2>
               <IconButton aria-label="‎education‏" size="small" disabled>
@@ -102,7 +107,7 @@ class Resume extends React.Component {
                 – Development of a Tic-Tac-Toe game with{" "}
                 <strong>ReactJS</strong>
                 <br />
-                The game can be played in a production environment on{" "}
+                &emsp; The game can be played in a production environment on{" "}
                 <strong>Heroku platform</strong> –{" "}
                 <a
                   href="https://chen-alon-tic-tac-toe.herokuapp.com/"
@@ -112,9 +117,18 @@ class Resume extends React.Component {
                   play the game.‎
                 </a>
               </p>
+              <p>
+                <a
+                  href="https://github.com/chen-alon/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  My Portfolio
+                </a>{" "}
+                – created this portfolio website using React.js
+              </p>
             </div>
           </div>
-
           <div className="professional-skills‏">
             <h2>
               <IconButton aria-label="‎education‏" size="small" disabled>
@@ -138,7 +152,6 @@ class Resume extends React.Component {
               </li>
             </ul>
           </div>
-
           <div className="work-experience">
             <h2>
               <IconButton aria-label="work" size="small" disabled>
@@ -168,7 +181,6 @@ class Resume extends React.Component {
               ‎<span className="time">2016-‎‎2017</span>
             </p>
           </div>
-
           <div className="military-service">
             <h2>
               <IconButton aria-label="‎education‏" size="small" disabled>
@@ -181,7 +193,6 @@ class Resume extends React.Component {
               technician <span className="time">‎2012-2014‎</span>
             </p>
           </div>
-
           <div className="languages">
             <h2>
               <IconButton aria-label="‎education‏" size="small" disabled>

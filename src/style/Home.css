@@ -1,61 +1,67 @@
 .Home {
-  font-family: "Californian FB", Futura, sans-serif;
   font-size: calc(7px + 2vmin);
-  color: #5e595f;
-  padding-top: 20px;
+  color: rgb(94, 89, 95);
   width: 100%;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+}
+
+.home-title .titleWrapper {
+  color: #a9c9bf;
+}
+
+.home-title .cloneWrapper {
+  color: #c5e0d8;
+}
+
+.home-title p {
+  color: #a9c9bf;
+  font-size: calc(15px + 2vmin);
+}
+
+.details {
+  padding-top: 65px;
+  color: #7c968e;
+  overflow: hidden;
 }
 
 .basic-details {
-  background: linear-gradient(to right, #c0b1bc 10%, rgba(0, 0, 0, 0) 100%);
-  text-align: center;
-  overflow: visible;
-  /* border: 3px solid #c0b1bc; */
-  border: 3px solid #c0b1bc;
-  padding: 35px;
-  margin-left: 50px;
-  margin-right: 50px;
-  position: sticky;
-  display: inherit;
+  font-size: calc(8px + 2vmin);
+  font-weight: bold;
+  line-height: 180%;
+  display: block;
+  margin: 17px 17px 0 0;
 }
 
 .basic-details a {
-  color: #5e595f;
+  color: #7c968e;
   text-decoration: none;
 }
 
 .basic-details a:hover {
-  color: #8a6e99;
-}
-
-.basic-details text {
-  line-height: 170%;
+  color: #a9c9bf;
 }
 
 .summary {
-  padding-right: 50px;
-  width: 70%;
-  box-sizing: border-box;
-  float: right;
-  box-sizing: border-box;
-}
-
-.summary p {
-  text-align: left;
   padding-top: 40px;
+  float: right;
+  width: 50%;
+  line-height: 200%;
+  font-size: 100%;
 }
 
 .side-image {
   float: left;
-  padding-top: 35px;
-  padding-left: 30px;
-  width: 30%;
   box-sizing: border-box;
+  margin-right: 40px;
+  margin-left: 20px;
 }
 
 .image {
   opacity: 95%;
-  border: 2px solid #afa2ac;
+  border: 2px solid #a9c9bf;
   padding: 3px;
   background-color: #dcddd99a;
   box-sizing: border-box;
@@ -65,7 +71,7 @@
 }
 
 img:hover {
-  animation: shake 2s;
+  animation: shake 6s;
   animation-iteration-count: infinite;
 }
 

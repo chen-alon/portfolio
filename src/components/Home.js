@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../files/newProfile.jpeg";
+import Title from "./Title";
+import logo from "../files/favicon.png";
 import IconButton from "@material-ui/core/IconButton";
 import PhoneIcon from "@material-ui/icons/Phone";
 import PublicIcon from "@material-ui/icons/Public";
@@ -17,34 +18,52 @@ class Home extends React.Component {
   render() {
     return (
       <div className="Home">
+        <div className="home-title">
+          <Title text="I am Chen Alon"></Title>
+          <p>Software Engineer</p>
+        </div>
         <div className="details">
+          <aside className="side-image">
+            <img src={logo} className="image" alt="logo" />
+          </aside>
           <div className="basic-details">
             <IconButton aria-label="country" size="small" disabled>
               <PublicIcon fontSize="inherit" />
-            </IconButton>{" "}
-            Israel |
+            </IconButton>
+            Israel
+            <br />
             <IconButton aria-label="phone" size="small" disabled>
               <PhoneIcon fontSize="inherit" />
-            </IconButton>{" "}
-            052‎-‎‏602‏‎-‎‏0358‏‎ |
+            </IconButton>
+            <a href="tel:+972526020358" target="_blank" rel="noreferrer">
+              052‎-‎‏602‏‎-‎‏0358‏‎
+            </a>
+            <br />
             <IconButton aria-label="mail" size="small" disabled>
               <MailOutlineIcon fontSize="inherit" />
-            </IconButton>{" "}
-            chenalon259@gmail.com |
+            </IconButton>
+            <a
+              href="mailto:chenalon259@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              chenalon259@gmail.com
+            </a>
+            <br />
             <IconButton aria-label="github" size="small" disabled>
               <GitHubIcon fontSize="inherit" />
-            </IconButton>{" "}
+            </IconButton>
             <a
               href="https://github.com/chen-alon"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
-            </a>{" "}
-            |
+            </a>
+            <br />
             <IconButton aria-label="linkedin" size="small" disabled>
               <LinkedInIcon fontSize="inherit" />
-            </IconButton>{" "}
+            </IconButton>
             <a
               href="https://www.linkedin.com/in/chen-alon/"
               target="_blank"
@@ -52,34 +71,17 @@ class Home extends React.Component {
             >
               LinkedIn
             </a>
-            <br />
-            {/* <strong>
-              Looking for a full-time job as a Front-End‏ ‏developer in Gush Dan
-            </strong> */}
-          </div>
-
-          <div className="summary">
-            <p>
-              HEY there!
-              <br />
-              My name is Chen Alon, I'm 27 years old and a Software Engineering
-              graduate.
-              <br />
-              <br />
-              Looking forward to earning the position of Software Engineer at a
-              leading organization to showcase my skills in programming to
-              generate high-end solutions to general software issues along with
-              drawing better user experience.
-              <br />
-              <br />
-              Injoy.
-            </p>
           </div>
         </div>
 
-        <aside className="side-image">
-          <img src={logo} className="image" alt="logo" />
-        </aside>
+        <div className="summary">
+          HEY there!
+          <br />
+          I'm Looking forward to earning the position of Software Engineer at a
+          leading organization to showcase my skills in programming to generate
+          high-end solutions to general software issues along with drawing
+          better user experience.
+        </div>
       </div>
     );
   }

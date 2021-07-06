@@ -1,5 +1,4 @@
 import React from "react";
-import Title from "./Title";
 import Nav from "./Nav";
 import Home from "./Home";
 import Resume from "./Resume";
@@ -12,9 +11,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Title text="I am Chen Alon"></Title>
-        <p>Software Engineer</p>
-
         <Router>
           <Nav />
           <Switch>

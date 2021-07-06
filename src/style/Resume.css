@@ -1,36 +1,39 @@
 .Resume {
-  font-family: "Californian FB", Futura, sans-serif;
   font-size: calc(6px + 2vmin);
-  padding-top: 20px;
+  padding-top: 90px;
   width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.resume-title .titleWrapper {
+  color: #ceabb1;
+}
+
+.resume-title .cloneWrapper {
+  color: #ebc3ca;
 }
 
 .Download {
-  padding: 4px;
+  padding: 2px;
   font-size: calc(8px + 2vmin);
-  font-weight: bold;
-  background-color: #c9abd8;
-  display: inline;
+  color: #ceabb1;
 }
 
 .button {
-  border: 0px;
   border-width: 0px;
   background-color: transparent;
+  text-align: right;
+  margin-bottom: 20px;
 }
 
 .cv {
-  text-align: left;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 40px;
   font-size: calc(6px + 2vmin);
 }
 
 h2 {
-  background-color: #ebebeb;
-  margin-top: 15px;
+  background-color: #f3e7e9;
 }
 
 .work-experience,
@@ -44,11 +47,10 @@ h2 {
 }
 
 .projects-details a {
-  color: #ac8cbd;
+  color: #ceabb1;
   font-size: 19px;
-  text-decoration: none;
 }
 
 .projects-details a:hover {
-  color: #6f547e;
+  color: #ebc3ca;
 }

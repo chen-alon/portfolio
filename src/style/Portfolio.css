@@ -1,9 +1,17 @@
 .Portfolio {
-  font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(7px + 2vmin);
-  color: #5e595f;
-  padding-top: 20px;
+  font-size: calc(6px + 2vmin);
+  padding-top: 90px;
   width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.portfolio-title .titleWrapper {
+  color: #fbd074;
+}
+
+.portfolio-title .cloneWrapper {
+  color: #ffeaaf;
 }
 
 .card {

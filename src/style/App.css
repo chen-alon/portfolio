@@ -1,62 +1,56 @@
 .App {
   font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(10px + 2vmin);
-  color: #5e595f;
-  background-color: #cec2d6;
+  color: rgb(94, 89, 95);
+  /* background-color: #f4f7f5; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
   width: 100%;
 }
 
 .App-header {
-  background-color: #f4f7f5;
-  padding-top: 30px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
 }
 
-.App-header p {
-  margin-top: 0;
-}
-
 /* Site Navigation */
 nav ul {
-  text-align: center;
-  justify-content: space-between;
-  padding-right: 10px;
-  padding-left: 10px;
+  background-color: rgb(240, 236, 236);
+  font-size: calc(4px + 2vmin);
+  text-transform: uppercase;
+  list-style: none;
+  position: fixed;
+  right: 0;
+  padding-right: 70px;
 }
 
 nav li {
-  color: #5e595f;
-  text-transform: uppercase;
-  border: 1px dotted #999;
-  background: #f4f0f7;
-  border-radius: 10px;
-  width: 140px;
-  list-style: none;
+  color: #999;
   padding: 10px;
   display: inline-block;
-  border-spacing: 20px;
 }
 
-nav li:hover {
-  background-color: #ebe7ef;
+.home li:hover {
+  color: #a9c9bf;
+}
+.resume li:hover {
+  color: #ceabb1;
+}
+.portfolio li:hover {
+  color: #fbd074;
+}
+.contact li:hover {
+  color: #95d8df;
 }
 
 footer {
   text-align: center;
-  padding-bottom: 5px;
   padding-top: 5px;
   border-top: 2px dotted #a7a2a9;
-  background-color: #f4f7f5;
   font-size: 13px;
   color: #999;
 }

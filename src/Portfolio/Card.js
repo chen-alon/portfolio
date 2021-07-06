@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Contact.css";
+import "../style/Portfolio.css";
 import PropTypes from "prop-types";
 import { isMobile } from "react-device-detect";
 import IconButton from "@material-ui/core/IconButton";
@@ -39,7 +39,7 @@ const Card = ({ property }) => {
         </div>
         <div className="links">
           <a href={git} target="_blank" rel="noreferrer">
-            <IconButton aria-label="github" size="large" disabled>
+            <IconButton aria-label="github" size="medium" disabled>
               <GitHubIcon fontSize="inherit" />
             </IconButton>
             GitHub
@@ -47,7 +47,7 @@ const Card = ({ property }) => {
 
           {link ? (
             <a href={link} target="_blank" rel="noreferrer">
-              <IconButton aria-label="github" size="large" disabled>
+              <IconButton aria-label="github" size="medium" disabled>
                 <PlayCircleOutlineIcon fontSize="inherit" />
               </IconButton>
               DEMO
@@ -56,7 +56,7 @@ const Card = ({ property }) => {
 
           {isMobile ? (
             <a href={message} target="_blank" rel="noreferrer">
-              <IconButton aria-label="github" size="large" disabled>
+              <IconButton aria-label="github" size="medium" disabled>
                 <WhatsAppIcon fontSize="inherit" />
               </IconButton>
               Let's talk about this project

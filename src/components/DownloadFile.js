@@ -1,14 +1,8 @@
 import React from "react";
 import CV from "../files/CV_Chen_Alon.pdf";
-import IconButton from "@material-ui/core/IconButton";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import "../style/Resume.css";
 
 class DownloadFile extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   downloadEmployeeData = () => {
     fetch(CV).then((response) => {
       response.blob().then((blob) => {
@@ -23,15 +17,8 @@ class DownloadFile extends React.Component {
 
   render() {
     return (
-      <div className="Download">
-        <IconButton
-          aria-label="download"
-          size="small"
-          onClick={this.downloadEmployeeData}
-        >
-          Download Chen Alon's Resume
-          <ArrowDownwardIcon fontSize="inherit" />
-        </IconButton>
+      <div className="Download" onClick={this.downloadEmployeeData}>
+        Download Chen Alon's Resume
       </div>
     );
   }

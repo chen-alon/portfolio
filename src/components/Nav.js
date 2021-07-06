@@ -6,21 +6,31 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <Link to="/" style={{ padding: "10px", display: "inline-block" }}>
+        <Link
+          to="/"
+          style={{ padding: "10px", display: "inline-block" }}
+          className="home"
+        >
           <li>Home</li>
         </Link>
-        <Link to="/resume" style={{ padding: "10px", display: "inline-block" }}>
+        <Link
+          to="/resume"
+          style={{ padding: "10px", display: "inline-block" }}
+          className="resume"
+        >
           <li>Resume</li>
         </Link>
         <Link
           to="/portfolio"
           style={{ padding: "10px", display: "inline-block" }}
+          className="portfolio"
         >
           <li>Portfolio</li>
         </Link>
         <Link
           to="/contact"
           style={{ padding: "10px", display: "inline-block" }}
+          className="contact"
         >
           <li>Contant</li>
         </Link>

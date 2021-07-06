@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Portfolio.css";
+import Title from "../components/Title";
 import Card from "./Card";
 import data from "./Data";
 import IconButton from "@material-ui/core/IconButton";
@@ -33,6 +34,9 @@ class Portfolio extends React.Component {
     const { property } = this.state;
     return (
       <div className="Portfolio">
+        <div className="portfolio-title">
+          <Title text="My Works"></Title>
+        </div>
         <button
           onClick={() => this.prevProperty()}
           disabled={property.index === 0}

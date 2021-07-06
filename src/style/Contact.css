@@ -1,0 +1,29 @@
+.Contact {
+  font-size: calc(6px + 2vmin);
+  padding-top: 90px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact-title .titleWrapper {
+  color: #95d8df;
+}
+
+.contact-title .cloneWrapper {
+  color: #b6d9dd;
+}
+
+.boxes {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: rgb(240, 236, 236);
+}
+
+.field {
+  /* margin: "1rem 0rem"; */
+  width: 70%;
+}
