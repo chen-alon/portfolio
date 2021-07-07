@@ -9,7 +9,7 @@ const data = {
       name: "Hitchhiker",
       picture: hitchhiker,
       description:
-        "I have developed an Android app that will provide a solution to the problem of finding ‎partners for traveling in Israel and abroad, an app based on matching percentages ‎suitable for young and old alike. This app will help many travelers find the best people to travel with, based on their ‎interests and personalities. No ads, no fancy details.‎",
+        "I developed an Android app that will provide a solution to the problem of finding ‎partners for traveling in Israel and abroad, an app based on matching percentages ‎suitable for young and old alike. This app will help many travelers find the best people to travel with, based on their ‎interests and personalities. No ads, no fancy details.‎",
       frontend: "React Native, JavaScrpit",
       backend: "Firebase",
       git: "https://github.com/chen-alon/partners",
@@ -20,7 +20,8 @@ const data = {
       index: 1,
       name: "Susan's House",
       picture: susan,
-      description: ".......‎",
+      description:
+        "As part of a group, developed an Android and IOS app for a real customer - Susan’s House organization.‎",
       frontend: "React Native, JavaScrpit",
       backend: "Firebase",
       git: "https://github.com/chen-alon/SausanHouse",
@@ -31,9 +32,9 @@ const data = {
       index: 2,
       name: "Tic-Tac-Toe Game",
       picture: tictactoc,
-      description: ".......‎",
+      description: "I development a Tic-Tac-Toe game‎",
       frontend: "ReactJS, JavaScrpit, CSS3, HTML5",
-      backend: "Firebase",
+      backend: "Heroku",
       git: "https://github.com/chen-alon/tic-tac-toe",
       link: "https://chen-alon-tic-tac-toe.herokuapp.com/",
       message:
@@ -44,8 +45,8 @@ const data = {
       name: "Portfolio",
       picture: tictactoc,
       description: ".......‎",
-      frontend: "ReactJS, JavaScrpit, CSS3, HTML5",
-      backend: "Heroku",
+      frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI, Semantic-UI",
+      backend: "Firebase",
       git: "https://github.com/chen-alon/portfolio",
       message:
         "whatsapp://send?text=Hey Chen, I would like to contact you regarding your 'Portfolio' project.  &phone=+972526020358",

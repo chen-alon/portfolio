@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 import "../style/App.css";
 
 function Nav() {
   return (
     <nav>
-      <ul>
+      <ul
+        style={{
+          paddingRight: isMobile ? "10px" : "70px",
+          fontSize: isMobile ? "calc(2px + 2vmin)" : "calc(5px + 2vmin)",
+          position: isMobile ? "absolute" : "fixed",
+        }}
+      >
         <Link
           to="/"
           style={{ padding: "10px", display: "inline-block" }}

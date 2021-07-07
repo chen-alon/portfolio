@@ -9,23 +9,32 @@ import PersonIcon from "@material-ui/icons/Person";
 import LanguageIcon from "@material-ui/icons/Language";
 import StorageIcon from "@material-ui/icons/Storage";
 import { motion } from "framer-motion";
+import { isMobile } from "react-device-detect";
 import "../style/Resume.css";
 
-class Resume extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const aStyle = {
+  fontSize: isMobile ? "15px" : "19px",
+  color: "#ceabb1",
+};
 
+const timeStyle = {
+  float: "right",
+  fontSize: isMobile ? "12px" : "16px",
+};
+
+class Resume extends React.Component {
   render() {
     return (
-      <div className="Resume">
+      <div style={{ paddingTop: isMobile ? "110px" : "150px" }}>
         <div className="resume-title">
           <Title text="Resume"></Title>
         </div>
-        <div className="cv">
+        <div className="cv" style={{ paddingTop: isMobile ? "45px" : "65px" }}>
           <div style={{ textAlign: "right" }}>
-            <motion.button whileHover={{ scale: 1.1 }} className={"button"}>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              className={"buttonDowload"}
+            >
               <DownloadFile />
             </motion.button>
           </div>
@@ -39,7 +48,7 @@ class Resume extends React.Component {
             <p>
               Software Engineering B.Sc. degree‎, Azrieli College of Engineering
               (JCE)‎
-              <span className="time">2016-2020‎</span>‎<br />
+              <span style={timeStyle}>2016-2020‎</span>‎<br />
             </p>
           </div>
           <div className="projects‏">
@@ -49,11 +58,12 @@ class Resume extends React.Component {
               </IconButton>{" "}
               Projects‏‏
             </h2>
-            <div className="projects-details">
+            <div>
               <a
                 href="https://github.com/chen-alon/partners"
                 target="_blank"
                 rel="noreferrer"
+                style={aStyle}
               >
                 Hitchhiker
               </a>{" "}
@@ -79,6 +89,7 @@ class Resume extends React.Component {
                 href="https://github.com/chen-alon/SausanHouse"
                 target="_blank"
                 rel="noreferrer"
+                style={aStyle}
               >
                 Susan’s House
               </a>{" "}
@@ -101,6 +112,7 @@ class Resume extends React.Component {
                   href="https://github.com/chen-alon/tic-tac-toe"
                   target="_blank"
                   rel="noreferrer"
+                  style={aStyle}
                 >
                   Tic-Tac-Toe game
                 </a>{" "}
@@ -113,6 +125,7 @@ class Resume extends React.Component {
                   href="https://chen-alon-tic-tac-toe.herokuapp.com/"
                   target="_blank"
                   rel="noreferrer"
+                  style={aStyle}
                 >
                   play the game.‎
                 </a>
@@ -122,6 +135,7 @@ class Resume extends React.Component {
                   href="https://github.com/chen-alon/portfolio"
                   target="_blank"
                   rel="noreferrer"
+                  style={aStyle}
                 >
                   My Portfolio
                 </a>{" "}
@@ -163,7 +177,7 @@ class Resume extends React.Component {
               <strong>
                 SOC analyst, Tata Consultancy Services, Bank Yahav
               </strong>
-              <span className="time">‎2020-Present</span> <br />
+              <span style={timeStyle}>‎2020-Present</span> <br />
               Monitor‎ and ‎respond to security threats‎ ‎on the system and
               investigate malicious activities.‎ <br />
               Working with ArcSight, Siemplify and Splunk Enterprise Security
@@ -172,13 +186,13 @@ class Resume extends React.Component {
 
             <p>
               <strong>Sigint Cyber Unit, Israel Police</strong>
-              <span className="time">2018-2020‎</span>
+              <span style={timeStyle}>2018-2020‎</span>
             </p>
             <p>
               <strong>
                 Border Controller, Population and Immigration Authority
               </strong>
-              ‎<span className="time">2016-‎‎2017</span>
+              ‎<span style={timeStyle}>2016-‎‎2017</span>
             </p>
           </div>
           <div className="military-service">
@@ -190,7 +204,7 @@ class Resume extends React.Component {
             </h2>
             <p>
               Served at the Israeli Air Force as a heavy transport aircraft
-              technician <span className="time">‎2012-2014‎</span>
+              technician <span style={timeStyle}>‎2012-2014‎</span>
             </p>
           </div>
           <div className="languages">

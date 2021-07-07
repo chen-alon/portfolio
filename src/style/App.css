@@ -1,29 +1,17 @@
 .App {
   font-family: "Californian FB", Futura, sans-serif;
   color: rgb(94, 89, 95);
-  /* background-color: #f4f7f5; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-top: 15px;
   width: 100%;
-}
-
-.App-header {
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
 }
 
 /* Site Navigation */
 nav ul {
   background-color: rgb(240, 236, 236);
-  font-size: calc(4px + 2vmin);
   text-transform: uppercase;
   list-style: none;
-  position: fixed;
   right: 0;
   padding-right: 70px;
 }

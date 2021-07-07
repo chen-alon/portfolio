@@ -1,11 +1,3 @@
-.Resume {
-  font-size: calc(6px + 2vmin);
-  padding-top: 90px;
-  width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .resume-title .titleWrapper {
   color: #ceabb1;
 }
@@ -20,7 +12,7 @@
   color: #ceabb1;
 }
 
-.button {
+.buttonDowload {
   border-width: 0px;
   background-color: transparent;
   text-align: right;
@@ -28,7 +20,7 @@
 }
 
 .cv {
-  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: calc(6px + 2vmin);
 }
 
@@ -39,18 +31,4 @@ h2 {
 .work-experience,
 .‎education‏ {
   line-height: 140%;
-}
-
-.time {
-  float: right;
-  font-size: 16px;
-}
-
-.projects-details a {
-  color: #ceabb1;
-  font-size: 19px;
-}
-
-.projects-details a:hover {
-  color: #ebc3ca;
 }

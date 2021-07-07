@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { isMobile } from "react-device-detect";
 import "../style/Title.css";
 
 class Title extends React.Component {
@@ -16,7 +17,6 @@ class Title extends React.Component {
     const height = this.refs.titleContainer.clientHeight;
     const oX = (e.nativeEvent.offsetX / width) * 100;
     const oY = (e.nativeEvent.offsetY / height) * 100;
-    // console.log(Math.floor(oX), Math.floor(oY));
     this.setState({
       x: oX,
       y: oY,
@@ -46,10 +46,22 @@ class Title extends React.Component {
         style={maskStyle}
       >
         <div className="titleWrapper">
-          <h1>{text}</h1>
+          <h1
+            style={{
+              fontSize: isMobile ? "calc(30px + 2vmin)" : "calc(60px + 2vmin)",
+            }}
+          >
+            {text}
+          </h1>
         </div>
         <div className="titleWrapper cloneWrapper">
-          <h1>{text}</h1>
+          <h1
+            style={{
+              fontSize: isMobile ? "calc(30px + 2vmin)" : "calc(60px + 2vmin)",
+            }}
+          >
+            {text}
+          </h1>
         </div>
       </div>
     );

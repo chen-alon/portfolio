@@ -5,12 +5,19 @@ import Resume from "./Resume";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "./Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 import "../style/App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header
+        style={{
+          paddingBottom: isMobile ? "20px" : "50px",
+          paddingLeft: isMobile ? "50px" : "150px",
+          paddingRight: isMobile ? "50px" : "150px",
+        }}
+      >
         <Router>
           <Nav />
           <Switch>

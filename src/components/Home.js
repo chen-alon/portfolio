@@ -7,6 +7,7 @@ import PublicIcon from "@material-ui/icons/Public";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import { isMobile } from "react-device-detect";
 import "../style/Home.css";
 
 class Home extends React.Component {
@@ -17,16 +18,39 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Home">
+      <div
+        style={{
+          paddingTop: isMobile ? "110px" : "150px",
+          display: "inline-block",
+        }}
+      >
         <div className="home-title">
           <Title text="I am Chen Alon"></Title>
           <p>Software Engineer</p>
         </div>
-        <div className="details">
-          <aside className="side-image">
-            <img src={logo} className="image" alt="logo" />
+        <div
+          style={{
+            paddingTop: isMobile ? "45px" : "65px",
+            color: "#7c968e",
+          }}
+        >
+          <aside
+            style={{ paddingRight: isMobile ? "10px" : "40px", float: "left" }}
+          >
+            <img
+              src={logo}
+              className="image"
+              alt="logo"
+              style={{ width: isMobile ? "130px" : "200px" }}
+            />
           </aside>
-          <div className="basic-details">
+          <div
+            className="basic-details"
+            style={{
+              fontSize: isMobile ? "calc(4px + 2vmin)" : "calc(8px + 2vmin)",
+              margin: isMobile ? "5px 5px 0 0" : "17px 17px 0 0",
+            }}
+          >
             <IconButton aria-label="country" size="small" disabled>
               <PublicIcon fontSize="inherit" />
             </IconButton>
@@ -73,8 +97,14 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
-
-        <div className="summary">
+        <div
+          className="summary"
+          style={{
+            fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
+            width: isMobile ? "70%" : "50%",
+            paddingBottom: isMobile ? "20px" : "50px",
+          }}
+        >
           HEY there!
           <br />
           I'm Looking forward to earning the position of Software Engineer at a
