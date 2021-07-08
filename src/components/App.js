@@ -4,6 +4,7 @@ import Home from "./Home";
 import Resume from "./Resume";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "./Contact";
+import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import "../style/App.css";
@@ -19,6 +20,7 @@ function App() {
         }}
       >
         <Router>
+          <ScrollToTop />
           <Nav />
           <Switch>
             <Route path="/" exact component={Home} />

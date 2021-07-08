@@ -7,10 +7,6 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import "../style/Portfolio.css";
 
-const cardStyle = {
-  
-}
-
 const Card = ({ property }) => {
   const {
     index,
@@ -25,11 +21,32 @@ const Card = ({ property }) => {
   } = property;
   return (
     <div id={`card-${index}`} className="card">
-      <div className="Section">
-        <aside className="side-img-project">
-          <img src={picture} alt={name} style={{ width: "200px" }} />
+      <div
+        className="Section"
+        style={{
+          boxSizing: "border-box",
+          display: isMobile ? "inline-block" : "flex",
+        }}
+      >
+        <aside style={{ width: "35%", float: "left" }}>
+          <img
+            src={picture}
+            alt={name}
+            style={{
+              width: isMobile ? "100px" : "200px",
+            }}
+          />
         </aside>
-        {description}
+        <div
+          style={{
+            width: isMobile ? "100%" : "65%",
+            float: isMobile ? "right" : "left",
+            paddingTop: isMobile ? "10px" : "0",
+            lineHeight: "180%",
+          }}
+        >
+          {description}
+        </div>
       </div>
       <div className="Section">
         <strong>Client size: </strong> {frontend}

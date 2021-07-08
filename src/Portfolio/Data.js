@@ -1,15 +1,16 @@
 import hitchhiker from "../files/hitchhiker.png";
 import susan from "../files/susan'shouse.jpeg";
 import tictactoc from "../files/tictactoc.png";
+import portfolio from "../files/favicon.png";
 
 const data = {
   works: [
     {
       index: 0,
-      name: "Hitchhiker",
+      name: "Hitchhiker App",
       picture: hitchhiker,
       description:
-        "I developed an Android app that will provide a solution to the problem of finding ‎partners for traveling in Israel and abroad, an app based on matching percentages ‎suitable for young and old alike. This app will help many travelers find the best people to travel with, based on their ‎interests and personalities. No ads, no fancy details.‎",
+        "I developed an Android app that will provide a solution to the problem of finding ‎partners for traveling in Israel and abroad, an app based on matching percentages ‎suitable for young and old alike.‎",
       frontend: "React Native, JavaScrpit",
       backend: "Firebase",
       git: "https://github.com/chen-alon/partners",
@@ -18,10 +19,10 @@ const data = {
     },
     {
       index: 1,
-      name: "Susan's House",
+      name: "Susan's House App",
       picture: susan,
       description:
-        "As part of a group, developed an Android and IOS app for a real customer - Susan’s House organization.‎",
+        "As part of a group, developed an Android and IOS app for a real customer - Susan’s House organization. An application for managing employees’ presence control enforced by location-based authentication. Created two interfaces - administrator interface and user interface.",
       frontend: "React Native, JavaScrpit",
       backend: "Firebase",
       git: "https://github.com/chen-alon/SausanHouse",
@@ -32,7 +33,7 @@ const data = {
       index: 2,
       name: "Tic-Tac-Toe Game",
       picture: tictactoc,
-      description: "I development a Tic-Tac-Toe game‎",
+      description: "Developed a Tic-Tac-Toe game‎.",
       frontend: "ReactJS, JavaScrpit, CSS3, HTML5",
       backend: "Heroku",
       git: "https://github.com/chen-alon/tic-tac-toe",
@@ -42,10 +43,10 @@ const data = {
     },
     {
       index: 3,
-      name: "Portfolio",
-      picture: tictactoc,
+      name: "Portfolio Web",
+      picture: portfolio,
       description: ".......‎",
-      frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI, Semantic-UI",
+      frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI",
       backend: "Firebase",
       git: "https://github.com/chen-alon/portfolio",
       message:
