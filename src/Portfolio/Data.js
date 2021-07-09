@@ -1,7 +1,7 @@
 import hitchhiker from "../files/hitchhiker.png";
 import susan from "../files/susan'shouse.jpeg";
 import tictactoc from "../files/tictactoc.png";
-import portfolio from "../files/favicon.png";
+// import portfolio from "../files/favicon.png";
 
 const data = {
   works: [
@@ -33,7 +33,7 @@ const data = {
       index: 2,
       name: "Tic-Tac-Toe Game",
       picture: tictactoc,
-      description: "Developed a Tic-Tac-Toe game‎.",
+      description: "Developed a Tic-Tac-Toe game.",
       frontend: "ReactJS, JavaScrpit, CSS3, HTML5",
       backend: "Heroku",
       git: "https://github.com/chen-alon/tic-tac-toe",
@@ -44,9 +44,9 @@ const data = {
     {
       index: 3,
       name: "Portfolio Web",
-      picture: portfolio,
-      description: ".......‎",
-      frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI",
+      description:
+        "I built my developer portfolio using react.js. I kept the design and code minimalist so it would be clean.‎",
+      frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI, Semantic-UI",
       backend: "Firebase",
       git: "https://github.com/chen-alon/portfolio",
       message:

@@ -12,16 +12,6 @@ import { motion } from "framer-motion";
 import { isMobile } from "react-device-detect";
 import "../style/Resume.css";
 
-const aStyle = {
-  fontSize: isMobile ? "15px" : "19px",
-  color: "#ceabb1",
-};
-
-const timeStyle = {
-  float: "right",
-  fontSize: isMobile ? "12px" : "16px",
-};
-
 class Resume extends React.Component {
   render() {
     return (
@@ -223,5 +213,15 @@ class Resume extends React.Component {
     );
   }
 }
+
+const aStyle = {
+  fontSize: isMobile ? "15px" : "19px",
+  color: "#ceabb1",
+};
+
+const timeStyle = {
+  float: "right",
+  fontSize: isMobile ? "12px" : "16px",
+};
 
 export default Resume;

@@ -39,43 +39,38 @@ class Portfolio extends React.Component {
           <button
             onClick={() => this.prevProperty()}
             disabled={property.index === 0}
-            style={{
-              margin: 10,
-              borderColor: "#fff",
-              backgroundColor: "rgb(240, 236, 236)",
-              padding: 15,
-            }}
+            style={buttonStyle}
           >
             prev
           </button>
           <button
             onClick={() => this.nextProperty()}
             disabled={property.index === data.works.length - 1}
-            style={{
-              margin: 10,
-              borderColor: "#fff",
-              backgroundColor: "rgb(240, 236, 236)",
-              padding: 15,
-            }}
+            style={buttonStyle}
           >
             next
           </button>
         </div>
 
-        <label
-          style={{
-            color: "#fbd074",
-            fontSize: isMobile ? "calc(15px + 2vmin)" : "calc(20px + 2vmin)",
-            fontWeight: "bold",
-            paddingTop: isMobile ? "20px" : "0",
-          }}
-        >
-          {property.name} :
-        </label>
+        <label style={labelStyle}>{property.name} :</label>
         <Card property={property} />
       </div>
     );
   }
 }
+
+const buttonStyle = {
+  margin: 10,
+  borderColor: "#fff",
+  backgroundColor: "rgb(240, 236, 236)",
+  padding: 15,
+};
+
+const labelStyle = {
+  color: "#fbd074",
+  fontSize: isMobile ? "calc(15px + 2vmin)" : "calc(20px + 2vmin)",
+  fontWeight: "bold",
+  paddingTop: isMobile ? "20px" : "0",
+};
 
 export default Portfolio;

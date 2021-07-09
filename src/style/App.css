@@ -8,14 +8,6 @@
 }
 
 /* Site Navigation */
-nav ul {
-  background-color: rgb(240, 236, 236);
-  text-transform: uppercase;
-  list-style: none;
-  right: 0;
-  padding-right: 70px;
-}
-
 nav li {
   color: #999;
   padding: 10px;

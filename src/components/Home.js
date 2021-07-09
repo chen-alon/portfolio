@@ -37,20 +37,10 @@ class Home extends React.Component {
           <aside
             style={{ paddingRight: isMobile ? "10px" : "40px", float: "left" }}
           >
-            <img
-              src={logo}
-              className="image"
-              alt="logo"
-              style={{ width: isMobile ? "130px" : "200px" }}
-            />
+            <img src={logo} style={imageStyle} alt="logo" className="image" />
           </aside>
-          <div
-            className="basic-details"
-            style={{
-              fontSize: isMobile ? "calc(4px + 2vmin)" : "calc(8px + 2vmin)",
-              margin: isMobile ? "5px 5px 0 0" : "17px 17px 0 0",
-            }}
-          >
+
+          <div className="basic-details" style={basicDetailsStyle}>
             <IconButton aria-label="country" size="small" disabled>
               <PublicIcon fontSize="inherit" />
             </IconButton>
@@ -97,14 +87,8 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
-        <div
-          className="summary"
-          style={{
-            fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
-            width: isMobile ? "70%" : "50%",
-            paddingBottom: isMobile ? "20px" : "50px",
-          }}
-        >
+
+        <div style={summaryStyle}>
           HEY there!
           <br />
           I'm Looking forward to earning the position of Software Engineer at a
@@ -116,5 +100,32 @@ class Home extends React.Component {
     );
   }
 }
+
+const basicDetailsStyle = {
+  fontSize: isMobile ? "calc(4px + 2vmin)" : "calc(8px + 2vmin)",
+  margin: isMobile ? "5px 5px 0 0" : "15px 15px 0 0",
+  display: isMobile ? "inline-block" : "",
+  fontWeight: "bold",
+  paddingTop: isMobile ? "10px" : "0",
+  lineHeight: "180%",
+};
+
+const imageStyle = {
+  opacity: "95%",
+  border: "2px solid #a9c9bf",
+  padding: "3px",
+  backgroundColor: "#dcddd99a",
+  boxSizing: "border - box",
+  width: isMobile ? "130px" : "200px",
+};
+
+const summaryStyle = {
+  fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
+  width: isMobile ? "70%" : "50%",
+  paddingBottom: isMobile ? "20px" : "50px",
+  paddingTop: isMobile ? "40px" : "80px",
+  float: "right",
+  lineHeight: "200%",
+};
 
 export default Home;

@@ -11,23 +11,9 @@
   font-size: calc(15px + 2vmin);
 }
 
-.image {
-  opacity: 95%;
-  border: 2px solid #a9c9bf;
-  padding: 3px;
-  background-color: #dcddd99a;
-  box-sizing: border-box;
-}
-
 .image:hover {
   animation: shake 6s;
   animation-iteration-count: infinite;
-}
-
-.basic-details {
-  font-weight: bold;
-  line-height: 180%;
-  margin: 17px 17px 0 0;
 }
 
 .basic-details a {
@@ -37,12 +23,6 @@
 
 .basic-details a:hover {
   color: #a9c9bf;
-}
-
-.summary {
-  padding-top: 40px;
-  float: right;
-  line-height: 200%;
 }
 
 @keyframes shake {

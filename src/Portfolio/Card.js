@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { isMobile } from "react-device-detect";
+import NoPicture from "../files/No_picture_available.png";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import { isMobile } from "react-device-detect";
 import "../style/Portfolio.css";
 
 const Card = ({ property }) => {
@@ -30,7 +31,7 @@ const Card = ({ property }) => {
       >
         <aside style={{ width: "35%", float: "left" }}>
           <img
-            src={picture}
+            src={picture ? picture : NoPicture}
             alt={name}
             style={{
               width: isMobile ? "100px" : "200px",

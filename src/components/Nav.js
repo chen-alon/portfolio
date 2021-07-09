@@ -6,44 +6,37 @@ import "../style/App.css";
 function Nav() {
   return (
     <nav>
-      <ul
-        style={{
-          paddingRight: isMobile ? "10px" : "70px",
-          fontSize: isMobile ? "calc(2px + 2vmin)" : "calc(5px + 2vmin)",
-          position: isMobile ? "absolute" : "fixed",
-        }}
-      >
-        <Link
-          to="/"
-          style={{ padding: "10px", display: "inline-block" }}
-          className="home"
-        >
+      <ul style={ulStyle}>
+        <Link to="/" style={linkStyle} className="home">
           <li>Home</li>
         </Link>
-        <Link
-          to="/resume"
-          style={{ padding: "10px", display: "inline-block" }}
-          className="resume"
-        >
+        <Link to="/resume" style={linkStyle} className="resume">
           <li>Resume</li>
         </Link>
-        <Link
-          to="/portfolio"
-          style={{ padding: "10px", display: "inline-block" }}
-          className="portfolio"
-        >
+        <Link to="/portfolio" style={linkStyle} className="portfolio">
           <li>Portfolio</li>
         </Link>
-        <Link
-          to="/contact"
-          style={{ padding: "10px", display: "inline-block" }}
-          className="contact"
-        >
+        <Link to="/contact" style={linkStyle} className="contact">
           <li>Contant</li>
         </Link>
       </ul>
     </nav>
   );
 }
+
+const ulStyle = {
+  backgroundColor: "rgb(240, 236, 236)",
+  textTransform: "uppercase",
+  listStyle: "none",
+  right: "0",
+  paddingRight: isMobile ? "5px" : "70px",
+  fontSize: isMobile ? "calc(2px + 2vmin)" : "calc(5px + 2vmin)",
+  position: isMobile ? "absolute" : "fixed",
+};
+
+const linkStyle = {
+  padding: "10px",
+  display: "inline-block",
+};
 
 export default Nav;

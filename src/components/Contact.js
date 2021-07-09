@@ -5,47 +5,6 @@ import { TextField, Grid } from "@material-ui/core";
 import emailjs from "emailjs-com";
 import { isMobile } from "react-device-detect";
 import "../style/Contact.css";
-import { Form } from "reactstrap";
-
-const style = makeStyles(() => ({
-  input: {
-    color: "rgb(94, 89, 95)",
-    fontFamily: "Californian FB",
-  },
-  button: {
-    marginTop: "1rem",
-    color: "rgb(94, 89, 95)",
-    backgroundColor: "transparent",
-    border: "0",
-  },
-  field: {
-    fontFamily: "Californian FB",
-    paddingBottom: "1rem",
-  },
-}));
-
-const InputField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      fontFamily: "Californian FB",
-      color: "#999",
-      display: "none",
-    },
-    "& label": {
-      fontFamily: "Californian FB",
-      color: "rgb(94, 89, 95)",
-    },
-    "& .MuiOutlinedInput-root": {
-      "&.Mui-focused fieldset": {
-        fontFamily: "Californian FB",
-        borderColor: "#b6d9dd",
-      },
-      "&:hover fieldset": {
-        borderColor: "rgb(240, 236, 236)",
-      },
-    },
-  },
-})(TextField);
 
 export default function Contact() {
   const classes = style();
@@ -82,25 +41,27 @@ export default function Contact() {
       </div>
       <div className="boxes">
         <Grid container justify="center">
-          <Form className={classes.root} onSubmit={sendEmail}>
-            <label
-              style={{
-                textAlign: "left",
-                display: "block",
-              }}
-            >
-              Email{" "}
-            </label>
-            <InputField
-              label="Your email.."
-              variant="outlined"
-              margin="dense"
-              required
-              fullWidth={true}
-              type="email"
-              name="email"
-              InputLabelProps={{ required: false, className: classes.input }}
-            />
+          <form className={classes.root} onSubmit={sendEmail}>
+            <div style={{ display: "inline" }}>
+              <label
+                style={{
+                  textAlign: "left",
+                  display: "block",
+                }}
+              >
+                Email{" "}
+              </label>
+              <InputField
+                label="Your email.."
+                variant="outlined"
+                margin="dense"
+                required
+                fullWidth={true}
+                type="email"
+                name="email"
+                InputLabelProps={{ required: false, className: classes.input }}
+              />
+            </div>
 
             <label
               style={{
@@ -139,9 +100,49 @@ export default function Contact() {
             <button className={classes.button} type="submit">
               SEND
             </button>
-          </Form>
+          </form>
         </Grid>
       </div>
     </div>
   );
 }
+
+const style = makeStyles(() => ({
+  input: {
+    color: "rgb(94, 89, 95)",
+    fontFamily: "Californian FB",
+  },
+  field: {
+    fontFamily: "Californian FB",
+    paddingBottom: "1rem",
+  },
+  button: {
+    marginTop: "1rem",
+    color: "rgb(94, 89, 95)",
+    backgroundColor: "transparent",
+    border: "0",
+  },
+}));
+
+const InputField = withStyles({
+  root: {
+    "& label.Mui-focused": {
+      fontFamily: "Californian FB",
+      color: "#999",
+      display: "none",
+    },
+    "& label": {
+      fontFamily: "Californian FB",
+      color: "rgb(94, 89, 95)",
+    },
+    "& .MuiOutlinedInput-root": {
+      "&.Mui-focused fieldset": {
+        fontFamily: "Californian FB",
+        borderColor: "#b6d9dd",
+      },
+      "&:hover fieldset": {
+        borderColor: "rgb(240, 236, 236)",
+      },
+    },
+  },
+})(TextField);
