@@ -47,7 +47,7 @@ const data = {
       description:
         "I built my developer portfolio using react.js. I kept the design and code minimalist so it would be clean.‎",
       frontend: "ReactJS, JavaScrpit, CSS3, HTML5, Material-UI, Semantic-UI",
-      backend: "Firebase",
+      backend: "Heroku",
       git: "https://github.com/chen-alon/portfolio",
       message:
         "whatsapp://send?text=Hey Chen, I would like to contact you regarding your 'Portfolio' project.  &phone=+972526020358",
