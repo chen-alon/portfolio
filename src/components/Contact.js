@@ -113,8 +113,8 @@ const style = makeStyles(() => ({
     fontFamily: "Californian FB",
   },
   field: {
-    fontFamily: "Californian FB",
     paddingBottom: "1rem",
+    fontSize: "4px",
   },
   button: {
     marginTop: "1rem",
@@ -134,6 +134,7 @@ const InputField = withStyles({
     "& label": {
       fontFamily: "Californian FB",
       color: "rgb(94, 89, 95)",
+      display: "none",
     },
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
@@ -141,7 +142,8 @@ const InputField = withStyles({
         borderColor: "#b6d9dd",
       },
       "&:hover fieldset": {
-        borderColor: "rgb(240, 236, 236)",
+        fontFamily: "Californian FB",
+        color: "#999",
       },
     },
   },

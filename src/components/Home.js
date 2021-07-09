@@ -102,7 +102,7 @@ class Home extends React.Component {
 }
 
 const basicDetailsStyle = {
-  fontSize: isMobile ? "calc(4px + 2vmin)" : "calc(8px + 2vmin)",
+  fontSize: isMobile ? "calc(8px + 2vmin)" : "calc(8px + 2vmin)",
   margin: isMobile ? "5px 5px 0 0" : "15px 15px 0 0",
   display: isMobile ? "inline-block" : "",
   fontWeight: "bold",
@@ -122,7 +122,6 @@ const imageStyle = {
 const summaryStyle = {
   fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
   width: isMobile ? "70%" : "50%",
-  paddingBottom: isMobile ? "20px" : "50px",
   paddingTop: isMobile ? "40px" : "80px",
   float: "right",
   lineHeight: "200%",

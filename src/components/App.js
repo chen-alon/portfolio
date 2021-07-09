@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <header
         style={{
-          paddingBottom: isMobile ? "20px" : "50px",
+          marginBottom: isMobile ? "70px" : "100px",
           paddingLeft: isMobile ? "50px" : "150px",
           paddingRight: isMobile ? "50px" : "150px",
         }}

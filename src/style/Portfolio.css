@@ -25,15 +25,6 @@
   border-color: transparent;
 }
 
-.card .Section {
-  padding-top: 25px;
-  display: inline;
-}
-
-.links {
-  text-align: center;
-}
-
 .links a {
   color: #5e595f;
   text-decoration: none;

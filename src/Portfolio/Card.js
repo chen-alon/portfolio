@@ -23,7 +23,6 @@ const Card = ({ property }) => {
   return (
     <div id={`card-${index}`} className="card">
       <div
-        className="Section"
         style={{
           boxSizing: "border-box",
           display: isMobile ? "inline-block" : "flex",
@@ -49,13 +48,27 @@ const Card = ({ property }) => {
           {description}
         </div>
       </div>
-      <div className="Section">
-        <strong>Client size: </strong> {frontend}
+
+      <div
+        style={{
+          paddingTop: "30px",
+          paddingBottom: isMobile ? "30px" : "0",
+          display: "inline",
+        }}
+      >
+        <strong>Client side: </strong> {frontend}
         <br />
         <strong>Server side: </strong> {backend}
       </div>
-      <div className="links">
-        <a href={git} target="_blank" rel="noreferrer">
+
+      <div
+        className="links"
+        style={{
+          textAlign: "center",
+          paddingTop: isMobile ? "10px" : "0",
+        }}
+      >
+        <a href={git} target="_blank" rel="noreferrer" style={linkStyle}>
           <IconButton aria-label="github" size="medium" disabled>
             <GitHubIcon fontSize="inherit" />
           </IconButton>
@@ -63,7 +76,7 @@ const Card = ({ property }) => {
         </a>
 
         {link ? (
-          <a href={link} target="_blank" rel="noreferrer">
+          <a href={link} target="_blank" rel="noreferrer" style={linkStyle}>
             <IconButton aria-label="github" size="medium" disabled>
               <PlayCircleOutlineIcon fontSize="inherit" />
             </IconButton>
@@ -72,7 +85,7 @@ const Card = ({ property }) => {
         ) : null}
 
         {isMobile ? (
-          <a href={message} target="_blank" rel="noreferrer">
+          <a href={message} target="_blank" rel="noreferrer" style={linkStyle}>
             <IconButton aria-label="github" size="medium" disabled>
               <WhatsAppIcon fontSize="inherit" />
             </IconButton>
@@ -82,6 +95,10 @@ const Card = ({ property }) => {
       </div>
     </div>
   );
+};
+
+const linkStyle = {
+  display: isMobile ? "block" : "inline",
 };
 
 Card.propTypes = {

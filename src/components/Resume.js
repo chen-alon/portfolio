@@ -129,7 +129,7 @@ class Resume extends React.Component {
                 >
                   My Portfolio
                 </a>{" "}
-                – created this portfolio website using React.js
+                – Created this portfolio website using React.js
               </p>
             </div>
           </div>
