@@ -33,7 +33,7 @@ const data = {
       index: 2,
       name: "Tic-Tac-Toe Game",
       picture: tictactoc,
-      description: "Developed a Tic-Tac-Toe game.",
+      description: "I developed a Tic-Tac-Toe game.",
       frontend: "ReactJS, JavaScrpit, CSS3, HTML5",
       backend: "Heroku",
       git: "https://github.com/chen-alon/tic-tac-toe",
