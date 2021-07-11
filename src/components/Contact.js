@@ -110,7 +110,7 @@ export default function Contact() {
 const style = makeStyles(() => ({
   input: {
     color: "rgb(94, 89, 95)",
-    fontFamily: "Californian FB",
+    fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
   },
   field: {
     paddingBottom: "1rem",
@@ -127,22 +127,22 @@ const style = makeStyles(() => ({
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
-      fontFamily: "Californian FB",
+      fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
       color: "#999",
       display: "none",
     },
     "& label": {
-      fontFamily: "Californian FB",
+      fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
       color: "rgb(94, 89, 95)",
       display: "none",
     },
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
-        fontFamily: "Californian FB",
+        fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
         borderColor: "#b6d9dd",
       },
       "&:hover fieldset": {
-        fontFamily: "Californian FB",
+        fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
         color: "#999",
       },
     },
