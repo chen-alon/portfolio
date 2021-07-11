@@ -1,5 +1,5 @@
 .App {
-  font-family: "Californian FB", "Rockwell", "sans-serif";
+  font-family: "Rockwell", "sans-serif";
   color: rgb(94, 89, 95);
   margin-left: auto;
   margin-right: auto;
@@ -8,12 +8,6 @@
 }
 
 /* Site Navigation */
-nav li {
-  color: #999;
-  padding: 10px;
-  display: inline-block;
-}
-
 .home li:hover {
   color: #a9c9bf;
 }

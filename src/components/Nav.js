@@ -8,16 +8,16 @@ function Nav() {
     <nav>
       <ul style={ulStyle}>
         <Link to="/" style={linkStyle} className="home">
-          <li>Home</li>
+          <li style={listStyle}>Home</li>
         </Link>
         <Link to="/resume" style={linkStyle} className="resume">
-          <li>Resume</li>
+          <li style={listStyle}>Resume</li>
         </Link>
         <Link to="/portfolio" style={linkStyle} className="portfolio">
-          <li>Portfolio</li>
+          <li style={listStyle}>Portfolio</li>
         </Link>
         <Link to="/contact" style={linkStyle} className="contact">
-          <li>Contant</li>
+          <li style={listStyle}>Contant</li>
         </Link>
       </ul>
     </nav>
@@ -35,7 +35,14 @@ const ulStyle = {
 };
 
 const linkStyle = {
+  padding: isMobile ? "4px" : "10px",
+  display: "inline-block",
+};
+
+const listStyle = {
+  fontSize: "9px",
   padding: "10px",
+  color: "#999",
   display: "inline-block",
 };
 
