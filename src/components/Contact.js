@@ -22,10 +22,10 @@ export default function Contact() {
       .then(
         function (response) {
           window.location.reload();
-          console.log("SUCCESS", response);
+          console.log("SUCCESS!", response.status, response.text);
         },
         function (error) {
-          console.log("FAILED", error);
+          console.log("FAILED...", error);
         }
       );
   }
