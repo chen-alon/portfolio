@@ -8,6 +8,12 @@
 }
 
 /* Site Navigation */
+nav li {
+  color: #999;
+  padding: 10px;
+  display: inline-block;
+}
+
 .home li:hover {
   color: #a9c9bf;
 }

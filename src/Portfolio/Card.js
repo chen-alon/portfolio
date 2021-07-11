@@ -22,18 +22,14 @@ const Card = ({ property }) => {
   } = property;
   return (
     <div id={`card-${index}`} className="card">
-      <div
-        style={{
-          boxSizing: "border-box",
-          display: isMobile ? "inline-block" : "flex",
-        }}
-      >
-        <aside style={{ width: "35%", float: "left" }}>
+      <div>
+        <aside style={{ width: "35%" }}>
           <img
             src={picture ? picture : NoPicture}
             alt={name}
             style={{
               width: isMobile ? "100px" : "200px",
+              float: "left",
             }}
           />
         </aside>
@@ -41,7 +37,8 @@ const Card = ({ property }) => {
           style={{
             width: isMobile ? "100%" : "65%",
             float: isMobile ? "right" : "left",
-            paddingTop: isMobile ? "10px" : "0",
+            paddingTop: "10px",
+            paddingLeft: isMobile ? "0" : "20px",
             lineHeight: "180%",
           }}
         >
