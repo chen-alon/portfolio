@@ -215,13 +215,13 @@ class Resume extends React.Component {
 }
 
 const aStyle = {
-  fontSize: isMobile ? "15px" : "19px",
+  fontSize: isMobile ? "0.9375rem" : "1.1875rem",
   color: "#ceabb1",
 };
 
 const timeStyle = {
   float: "right",
-  fontSize: isMobile ? "12px" : "16px",
+  fontSize: isMobile ? "0.75rem" : "1rem",
 };
 
 export default Resume;

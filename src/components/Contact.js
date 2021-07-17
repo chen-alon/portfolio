@@ -114,7 +114,6 @@ const style = makeStyles(() => ({
   },
   field: {
     paddingBottom: "1rem",
-    fontSize: "4px",
   },
   button: {
     marginTop: "1rem",

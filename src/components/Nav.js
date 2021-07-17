@@ -30,6 +30,7 @@ const ulStyle = {
   listStyle: "none",
   right: "0",
   paddingRight: isMobile ? "5px" : "70px",
+  paddingLeft: isMobile ? "5px" : "70px",
   fontSize: isMobile ? "calc(2px + 2vmin)" : "calc(5px + 2vmin)",
   position: isMobile ? "absolute" : "fixed",
 };
