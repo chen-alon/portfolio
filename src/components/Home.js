@@ -91,10 +91,9 @@ class Home extends React.Component {
         <div style={summaryStyle}>
           HEY there!
           <br />
-          I'm Looking forward to earning the position of Software Engineer at a
-          leading organization to showcase my skills in programming to generate
-          high-end solutions to general software issues along with drawing
-          better user experience.
+          I'm Looking for a position of Software Engineer to showcase my skills
+          in programming to generate high-end solutions to general software
+          issues along with drawing better user experience.
         </div>
       </div>
     );
@@ -120,7 +119,7 @@ const imageStyle = {
 };
 
 const summaryStyle = {
-  fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
+  fontSize: isMobile ? "calc(7px + 2vmin)" : "calc(9px + 2vmin)",
   width: isMobile ? "70%" : "50%",
   paddingTop: isMobile ? "40px" : "80px",
   float: "right",
