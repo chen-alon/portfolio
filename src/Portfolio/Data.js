@@ -1,7 +1,6 @@
 import hitchhiker from "../files/hitchhiker.png";
 import susan from "../files/susan'shouse.jpeg";
 import tictactoc from "../files/tictactoc.png";
-// import portfolio from "../files/favicon.png";
 
 const data = {
   works: [
@@ -46,7 +45,7 @@ const data = {
       name: "Portfolio Web",
       description: "I built my developer portfolio using react.js.‎",
       frontend: "ReactJS, JavaScript, CSS3, HTML5, Material-UI, Semantic-UI",
-      backend: "Heroku",
+      backend: "SharkHosting",
       git: "https://github.com/chen-alon/portfolio",
       message:
         'whatsapp://send?text=Hey Chen, I would like to talk with you about your "Portfolio" project.  &phone=+972526020358',

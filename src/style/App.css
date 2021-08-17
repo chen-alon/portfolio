@@ -4,7 +4,12 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
-  width: 100%;
+  /* background-image: url("../files/13.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-position: top center; */
 }
 
 /* Site Navigation */
@@ -15,22 +20,24 @@ nav li {
 }
 
 .home li:hover {
-  color: #a9c9bf;
+  color: #68a190;
 }
 .resume li:hover {
-  color: #ceabb1;
+  /* color: #fa0061; */
+  color: #f66598;
 }
 .portfolio li:hover {
-  color: #fbd074;
+  color: #efa26b;
 }
 .contact li:hover {
-  color: #95d8df;
+  color: #3a5ee4;
 }
 
 footer {
   text-align: center;
-  padding-top: 5px;
-  border-top: 2px dotted #a7a2a9;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-top: 2px dotted rgb(94, 89, 95);
   font-size: 0.9rem;
-  color: #999;
+  color: rgb(94, 89, 95);
 }

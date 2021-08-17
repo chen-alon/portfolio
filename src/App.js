@@ -32,7 +32,9 @@ function App() {
       </header>
 
       <footer>
-        <p>&copy; since 1993</p>
+        <p>
+          BUILT BY <br /> <strong>&copy; Chen Alon</strong>{" "}
+        </p>
       </footer>
     </div>
   );

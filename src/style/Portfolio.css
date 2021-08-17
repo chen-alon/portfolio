@@ -1,24 +1,16 @@
 .portfolio-title .titleWrapper {
-  color: #fbd074;
+  color: #ea8034;
 }
 
 .portfolio-title .cloneWrapper {
-  color: #ffeaaf;
-}
-
-.project-name {
-  color: #fbd074;
-  font-weight: bold;
-  font-size: calc(20px + 2vmin);
-  float: left;
-  vertical-align: middle;
+  color: #efa26b;
 }
 
 .card {
   padding: 15px;
   text-align: left;
-  margin: 0 auto;
   margin-top: 10px;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -26,10 +18,23 @@
 }
 
 .links a {
-  color: #5e595f;
+  color: black;
   text-decoration: none;
+  padding: 5px;
+  padding-top: 20px;
 }
 
 .links a:hover {
-  color: #fbd074;
+  color: #efa26b;
+}
+
+.grid-container {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  position: static;
+}
+.grid-item {
+  font-size: 30px;
+  font-size: calc(6px + 2vmin);
 }

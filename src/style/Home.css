@@ -1,28 +1,72 @@
 .home-title .titleWrapper {
-  color: #a9c9bf;
+  color: #4f7d6f;
 }
 
 .home-title .cloneWrapper {
-  color: #c5e0d8;
+  color: #68a190;
 }
 
 .home-title p {
-  color: #a9c9bf;
+  color: #4f7d6f;
   font-size: calc(15px + 2vmin);
+}
+
+.basic-details {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.basic-details a {
+  color: #68a190;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.basic-details a:hover {
+  color: #4f7d6f;
+}
+
+.hoverIcon {
+  position: relative;
+  text-align: center;
+}
+
+.hoverIcon .hide {
+  visibility: hidden;
+  color: #8c9995;
+  width: 160px;
+  padding: 5px 7px;
+
+  /* Position the hide*/
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.hoverIcon:hover .hide {
+  visibility: visible;
+}
+
+.main-area {
+  width: 30%;
+  float: left;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+  display: block;
 }
 
 .image:hover {
   animation: shake 6s;
   animation-iteration-count: infinite;
-}
-
-.basic-details a {
-  color: #7c968e;
-  text-decoration: none;
-}
-
-.basic-details a:hover {
-  color: #a9c9bf;
 }
 
 @keyframes shake {

@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div
       style={{
-        paddingTop: isMobile ? "110px" : "150px",
+        paddingTop: isMobile ? "70px" : "110px",
       }}
     >
       <div className="contact-title">
@@ -42,7 +42,7 @@ export default function Contact() {
       <div className="boxes">
         <Grid container justify="center">
           <form className={classes.root} onSubmit={sendEmail}>
-            <div style={{ display: "inline" }}>
+            <div>
               <label
                 style={{
                   textAlign: "left",
@@ -138,7 +138,7 @@ const InputField = withStyles({
     "& .MuiOutlinedInput-root": {
       "&.Mui-focused fieldset": {
         fontFamily: ["Californian FB", "Rockwell", "sans-serif"],
-        borderColor: "#b6d9dd",
+        borderColor: "#3A5EE4",
       },
       "&:hover fieldset": {
         fontFamily: ["Californian FB", "Rockwell", "sans-serif"],

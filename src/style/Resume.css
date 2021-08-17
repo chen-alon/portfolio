@@ -1,15 +1,9 @@
 .resume-title .titleWrapper {
-  color: #ceabb1;
+  color: #f32f72;
 }
 
 .resume-title .cloneWrapper {
-  color: #ebc3ca;
-}
-
-.Download {
-  padding: 2px;
-  font-size: calc(8px + 2vmin);
-  color: #ceabb1;
+  color: #f66598;
 }
 
 .buttonDowload {
@@ -21,13 +15,30 @@
 
 .cv {
   font-size: calc(6px + 2vmin);
+  padding: 50px;
+  margin-top: 30px;
+  border: 6px ridge rgb(240, 236, 236);
 }
 
 h2 {
-  background-color: #f3e7e9;
+  background-color: rgb(240, 236, 236);
 }
 
-.work-experience,
-.‎education‏ {
-  line-height: 140%;
+p {
+  padding-bottom: 5px;
+}
+
+.hoverDownload {
+  text-align: center;
+  color: #f66598;
+  font-weight: bold;
+}
+
+.hoverDownload .hide {
+  visibility: hidden;
+  color: #f66598;
+}
+
+.hoverDownload:hover .hide {
+  visibility: visible;
 }
