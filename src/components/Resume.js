@@ -165,7 +165,8 @@ const Skills = () => (
         C/C++, SQL, CSS3, HTML5‎, GitHub
       </li>
       <li>
-        <strong>Frameworks and libraries: </strong>ReactJS, React-Native
+        <strong>Frameworks and libraries: </strong>React JS, React-Native,
+        Material-UI, Semantic-UI, Bootstrap, Node.js
       </li>
       <li>
         <strong>OS: </strong>Windows, Unix-Linux

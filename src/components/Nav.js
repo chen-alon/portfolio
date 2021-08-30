@@ -17,7 +17,7 @@ function Nav() {
           <li>Portfolio</li>
         </Link>
         <Link to="/contact" style={linkStyle} className="contact">
-          <li>Contant</li>
+          <li>Contact</li>
         </Link>
       </ul>
     </nav>
