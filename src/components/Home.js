@@ -28,7 +28,7 @@ class Home extends React.Component {
           }}
         >
           <div className="basic-details" style={basicDetailsStyle}>
-            <div className="hoverIcon" style={iconsStyle}>
+            <div className="hoverIcon" style={{ margin: "60px" }}>
               <a
                 href="https://github.com/chen-alon"
                 target="_blank"
@@ -118,10 +118,6 @@ class Home extends React.Component {
     );
   }
 }
-
-const iconsStyle = {
-  margin: isMobile ? "10px" : "60px",
-};
 
 const basicDetailsStyle = {
   fontSize: isMobile ? "calc(6px + 2vmin)" : "calc(8px + 2vmin)",
