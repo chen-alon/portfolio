@@ -79,8 +79,6 @@ class Portfolio extends React.Component {
   }
 }
 
-const card = {};
-
 const buttonStyle = {
   margin: 10,
   borderColor: "transparent",

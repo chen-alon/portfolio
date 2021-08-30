@@ -16,6 +16,7 @@ const Card = ({ property }) => {
       <div>
         <aside style={{ width: "35%" }}>
           <img
+            alt="img"
             src={picture ? picture : NoPicture}
             style={{
               width: isMobile ? "100px" : "200px",
