@@ -128,6 +128,7 @@ const basicDetailsStyle = {
   margin: isMobile ? "10px 10px 0 0" : "15px 15px 0 0",
   fontWeight: "bold",
   paddingTop: isMobile ? "10px" : "0",
+  paddingBottom: isMobile ? "40px" : "",
   lineHeight: "180%",
 };
 
