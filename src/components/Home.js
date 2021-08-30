@@ -130,6 +130,7 @@ const basicDetailsStyle = {
   paddingTop: isMobile ? "10px" : "0",
   paddingBottom: isMobile ? "40px" : "",
   lineHeight: "180%",
+  display: isMobile ? "block" : "flex",
 };
 
 const summaryStyle = {
