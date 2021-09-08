@@ -45,7 +45,6 @@ const data = {
       name: "Portfolio Web",
       description: "I built my developer portfolio using react.js.‎",
       frontend: "ReactJS, JavaScript, CSS3, HTML5, Material-UI, Semantic-UI",
-      backend: "SharkHosting",
       git: "https://github.com/chen-alon/portfolio",
       message:
         'whatsapp://send?text=Hey Chen, I would like to talk with you about your "Portfolio" project.  &phone=+972526020358',

@@ -43,9 +43,16 @@ const Card = ({ property }) => {
           display: "inline",
         }}
       >
-        <strong>Client side: </strong> {frontend}
-        <br />
-        <strong>Server side: </strong> {backend}
+        {frontend ? (
+          <p>
+            <strong>Client side: </strong> {frontend}
+          </p>
+        ) : null}
+        {backend ? (
+          <p>
+            <strong>Server side: </strong> {backend}
+          </p>
+        ) : null}
       </div>
 
       <div className="links" style={{ textAlign: "center" }}>
