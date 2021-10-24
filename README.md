@@ -15,7 +15,7 @@ $ npm install
 
 Then, to deploy to local host:
 ```bash
-$ npm start
+$ npm run start
 ```
 
 
